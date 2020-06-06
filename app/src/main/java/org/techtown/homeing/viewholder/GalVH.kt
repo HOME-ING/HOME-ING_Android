@@ -11,7 +11,7 @@ import org.techtown.homeing.data.GalData
 class GalVH (view : View) : RecyclerView.ViewHolder(view){
 
     val img = view.findViewById<ImageView>(R.id.contents_img)
-    fun onBind(data : GalData){
-        Glide.with(itemView).load(data.img).into(img)
+    fun onBind(data : GalData.Data){
+        Glide.with(itemView).load(data.challegeUrl).into(img)
     }
 }

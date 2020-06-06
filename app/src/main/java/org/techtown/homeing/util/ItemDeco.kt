@@ -1,4 +1,4 @@
-package org.techtown.util
+package org.techtown.homeing.util
 
 import android.content.Context
 import android.graphics.Rect
