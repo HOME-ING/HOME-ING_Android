@@ -16,5 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/gallery_background"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/login_img_illust"
+        android:scaleType="fitXY"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

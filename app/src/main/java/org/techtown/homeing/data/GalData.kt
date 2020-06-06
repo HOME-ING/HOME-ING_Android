@@ -4,7 +4,7 @@ data class GalData(
     val data : List<Data>
 ){
     data class Data(
-        val challegeUrl : String,
+        val challengeUrl : String,
         val likes : String,
         val shared : String,
         val title : String,
