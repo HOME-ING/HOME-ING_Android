@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    >
 
-
-    <Button
-        android:id="@+id/login_backbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
     <ImageView
         android:id="@+id/login_imgView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="60dp"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="100%"
+        android:adjustViewBounds="true"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <EditText
@@ -26,25 +26,45 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:background="@drawable/login_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+
+        />
 
     <EditText
         android:id="@+id/login_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:background="@drawable/login_img_password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="21dp"/>
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:background="@drawable/btn_login"
+        android:text="Button"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
     <TextView
         android:id="@+id/login_txt"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="108dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5sp"
+        android:textColor="#a7a7a7"
+        android:textSize="10sp"
+        tools:text="계정이 없으세요? 회원가입을 도와드릴게요." />
 
 </LinearLayout>
