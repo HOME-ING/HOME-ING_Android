@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
 
 
         login_btn.setOnClickListener{
-            if(login_name.text.isNullOrBlank()|| login_email.text.isNullOrBlank()|| login_pwd.text.isNullOrBlank()){
+            if(login_name.text.isNullOrBlank()||  login_pwd.text.isNullOrBlank()){
                 Toast.makeText(this, "이메일과 비밀번호를 확인하세요.", Toast.LENGTH_SHORT).show()
 
             }else{
