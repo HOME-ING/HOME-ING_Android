@@ -3,4 +3,5 @@
 
     <item android:drawable="@drawable/ic_search" android:state_selected="false"
         android:state_focused="false" android:state_pressed="false"/>
+    <item android:drawable="@drawable/ic_search_selected" android:state_checked="true"/>
 </selector>

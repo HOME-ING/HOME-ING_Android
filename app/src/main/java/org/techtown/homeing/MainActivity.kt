@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
                 positionOffsetPixels: Int
             ) {}
 
-            override fun onPageSelected(position: Int) {}
+            override fun onPageSelected(position: Int) {
+                main_bottom_navigation.menu.getItem(position).isChecked = true
+            }
         })
 
 
@@ -45,6 +47,8 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+        main_bottom_navigation.itemIconTintList = null
     }
 
 }

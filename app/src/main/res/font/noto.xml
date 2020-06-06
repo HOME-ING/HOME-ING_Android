@@ -8,4 +8,11 @@
         app:fontStyle="normal"
         app:fontWeight="400"/>
 
+    <font
+        android:fontStyle="normal"
+        android:font="@font/notosanskr_bold"
+        android:fontWeight="700"
+        app:fontStyle="normal"
+        app:fontWeight="400"/>
+
 </font-family>
