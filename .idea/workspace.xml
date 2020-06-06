@@ -9,9 +9,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3ae1204-38ae-45a2-96d4-0ee56734f4ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_page.xml" afterDir="false" />
+    <list default="true" id="8a6192c4-4dd9-469f-98c1-2077ecf72060" name="Default Changelist" comment="loginpostman">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="ce081718c8d24f1704" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="ce081718a49c1226017e" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -32,17 +31,12 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="HOME_ING" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="layoutResourceFile" />
-        <option value="valueResourceFile" />
         <option value="resourceFile" />
-        <option value="Kotlin File" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -52,6 +46,11 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="kangmin1012" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cwknMpvEgYIDwjnHHCHtkZVZeK" />
@@ -59,29 +58,22 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="test" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-06T19:25:09.796Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Sopt_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-06T15:02:00.482Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GallerySample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\KANGMINGU\Desktop\homeing\app\src\main\res\font" />
-      <recent name="C:\Users\KANGMINGU\Desktop\HOME_ING\app\src\main\res\drawable" />
-    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="org.techtown.homeing.adapter" />
     </key>
     <key name="android.template.packageName">
       <recent name="org.techtown.homeing.ui.login" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.techtown.homeing" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\KANGMINGU\Desktop\homeing\app\src\main\res\font" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KANGMINGU\Desktop\HOME_ING\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,7 +105,7 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="specific_activity" />
+      <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
@@ -150,7 +142,7 @@
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="org.techtown.homeing.MainActivity" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -188,14 +180,7 @@
       <option name="project" value="LOCAL" />
       <updated>1591470957269</updated>
     </task>
-    <task id="LOCAL-00004" summary="#4 in progress 60%">
-      <created>1591475281076</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1591475281076</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +200,6 @@
     <MESSAGE value="Basic" />
     <MESSAGE value="MainTap" />
     <MESSAGE value="login_zeplin" />
-    <MESSAGE value="#4 in progress 60%" />
-    <option name="LAST_COMMIT_MESSAGE" value="#4 in progress 60%" />
+    <option name="LAST_COMMIT_MESSAGE" value="login_zeplin" />
   </component>
 </project>
