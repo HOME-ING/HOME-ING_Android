@@ -5,6 +5,43 @@
 
 <br>
 
+## 스플래시 화면
+- AndroidManifest.xml
+```kotlin
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+```
+
+- SplashActivity.kt
+```kotlin
+class SplashActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
+
+        val handler = Handler()
+        handler.postDelayed({
+            run {
+                startActivity(Intent(application, LoginActivity::class.java))
+                finish()
+            }
+        },3000)
+    }
+
+    override fun onBackPressed() {
+    }
+}
+```
+
+	
 ## 로그인
 ## :one: LoginActivity.xml
 
@@ -73,7 +110,8 @@
         }
 ```
 ## 홈
-화살표 버튼을 클릭하면 상세 컨텐츠를 보여주는 창으로 이동한다.
+화살표 버튼을 클릭하면 상세 컨텐츠를 보여주는 창으로 이동한다.   
+
 리사이클러뷰 사용
 1. 반복될 뷰 하나 만들기
 2. 배치 방향 정하기
@@ -231,4 +269,36 @@ object ContentsServiceImpl {
 
     val service = retrofit.create(ContentsService::class.java)
 }
+```
+
+- ContentFragment
+```kotlin
+override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        val v = inflater.inflate(R.layout.fragment_contents, container, false)
+
+        initHash(v)
+        initContents(v)
+
+        return v
+    }
+
+    private fun initHash(v : View){
+        var adapter = HashAdapter(v.context)
+        v.search_hashtag_rcv.adapter = adapter
+        v.search_hashtag_rcv.apply {
+            layoutManager = LinearLayoutManager(v.context, LinearLayoutManager.HORIZONTAL, false)
+            addItemDecoration(ItemDeco(v.context))
+        }
+        adapter.data = listOf(
+            HashData("# 달고나 커피"),
+            HashData("# 코하코토 만들기"),
+            HashData("# 바나나컵 만들기")
+        )
+
+        adapter.notifyDataSetChanged()
+    }
 ```
