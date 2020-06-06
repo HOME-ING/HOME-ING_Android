@@ -7,7 +7,7 @@
 
 ## :one: LoginActivity.xml
 
-![image](https://user-images.githubusercontent.com/58849278/83955799-f4435880-a891-11ea-9ad7-285bbaf62afb.png)
+<img src ="https://user-images.githubusercontent.com/56873136/83956085-21453a80-a895-11ea-8c12-6d3e576351ba.png" width = "30%">
 
 ## :two: Home-ing LoginActivity
  1. Client와 Server의 로그인 정보 통신 
