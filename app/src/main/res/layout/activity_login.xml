@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:backgroundTint="#f5f5f5"
     >
 
 
@@ -15,8 +16,7 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="70dp"
         android:layout_marginRight="60dp"
-        app:layout_aspectRatio="100%"
-        app:layout_widthPercent="100%"
+
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
