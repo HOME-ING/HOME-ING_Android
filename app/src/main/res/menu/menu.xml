@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_main"
-        android:icon="@drawable/icon"
-        android:title="Home"/>
+        android:icon="@drawable/icon_home"
+        android:title="home"/>
 
     <item android:id="@+id/menu_contents"
-        android:icon="@drawable/icon"
-        android:title="Contents"/>
+        android:icon="@drawable/icon_search"
+        android:title="search"/>
 
     <item android:id="@+id/menu_add"
-        android:title="add"/>
+        android:icon="@drawable/icon_upload"
+        android:title="upload"/>
 
     <item android:id="@+id/menu_story"
-        android:icon="@drawable/icon"
-        android:title="Icon"/>
+        android:icon="@drawable/icon_story"
+        android:title="story"/>
 
     <item android:id="@+id/menu_my_page"
-        android:icon="@drawable/icon"
-        android:title="MyPage"/>
+        android:icon="@drawable/icon_mypage"
+        android:title="my page"/>
 
 </menu>

@@ -24,7 +24,9 @@
         app:menu="@menu/menu"
         android:background="@color/white"
         app:itemTextColor="@color/black"
-        app:labelVisibilityMode="unlabeled"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:itemTextAppearanceActive="@style/BottomNavigationView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
