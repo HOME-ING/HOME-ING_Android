@@ -5,8 +5,13 @@
 
 <br>
 
-## 스플래시 화면
-- AndroidManifest.xml
+## :sweat_drops: Splash View
+
+ 
+
+ - AndroidManifest.xml
+
+
 ```kotlin
         <activity
             android:name=".ui.SplashActivity"
@@ -90,7 +95,8 @@ class SplashActivity : AppCompatActivity() {
     var service:RequestInterface = retrofit.create(RequestInterface::class.java)  }
     
     
-### 로그인 이후 화면 -> 뷰페이저와 bottomnavigation을 이용해 전체적인 레이아웃을 잡음.
+## Login 후 MainActivity -> View Pager와 BottomNavigation을 이용해 전체적인 레이아웃 적용 :rainbow:
+
 ```kotlin
         main_bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){
@@ -109,9 +115,8 @@ class SplashActivity : AppCompatActivity() {
             true
         }
 ```
-## 홈
-화살표 버튼을 클릭하면 상세 컨텐츠를 보여주는 창으로 이동한다.   
-
+## :house_with_garden: Home Fragment 
+화살표 버튼을 클릭하면 상세 컨텐츠를 보여주는 창으로 이동한다.
 리사이클러뷰 사용
 1. 반복될 뷰 하나 만들기
 2. 배치 방향 정하기
@@ -119,7 +124,8 @@ class SplashActivity : AppCompatActivity() {
 4. viewadapter
 
 
-## search
+## :mag: Search Fragment
+
 ContentsFragment가 두번째 search에 해당하는 프레그먼트이다.
 비규칙적인 그리드 형식으로 유저들의 챌린지를 보여준다.   
 - ContentsFragment.kt
@@ -140,7 +146,7 @@ ContentsFragment가 두번째 search에 해당하는 프레그먼트이다.
 ```
 
 
-### <뷰홀더>
+### :gift: *ViewHolder*
 - GalVH.kt
 ```kotlin
 class GalVH (view : View) : RecyclerView.ViewHolder(view){
@@ -164,7 +170,7 @@ class HashVH (view : View) : RecyclerView.ViewHolder(view){
 ```
 
 
-### <어댑터>
+### :couple: *Adapter*
 - GalAdapter.kt
 ```kotlin
 class GalAdapter (private val context : Context) : RecyclerView.Adapter<GalVH>(){
@@ -203,9 +209,9 @@ class HashAdapter (private val context : Context) : RecyclerView.Adapter<HashVH>
 }
 ```
 
-### <서버통신>
-#### 1. 라이브러리 추가
-#### 2. API문서 보고 객체 설계
+### < 서버 통신 >
+#### ***1. 라이브러리 추가***
+#### ***2. API문서 보고 객체 설계***
 
 - HashData
 챌린지제목이 들어감. (String)   
@@ -217,7 +223,7 @@ data class HashData(
 ```
 
 - GalData
-챌린지이미지, 좋아요수, 공유수, 챌린지제목, 챌린지설명이 들어간다. (String)   
+챌린지 이미지, 좋아요 수, 공유 수, 챌린지 제목, 챌린지 설명이 들어 간다. (String)   
 ```kotlin
 data class GalData(
     val data : List<Data>
@@ -233,7 +239,7 @@ data class GalData(
 ```
 
 
-#### 3. Retrofit Interface 설계
+#### :sunflower: 3. Retrofit Interface 설계
 - ContentsService.kt
 ```kotlin
 interface ContentsService {
@@ -242,7 +248,7 @@ interface ContentsService {
 }
 ```
 
-#### 4. Retrofit Interface 실제 구현체 만들고 통신
+#### :seedling:  4. Retrofit Interface 실제 구현체 만들고 통신
 - ContentsServicelmpl.kt
 ```kotlin
 object ContentsServiceImpl {
@@ -269,36 +275,4 @@ object ContentsServiceImpl {
 
     val service = retrofit.create(ContentsService::class.java)
 }
-```
-
-- ContentFragment
-```kotlin
-override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val v = inflater.inflate(R.layout.fragment_contents, container, false)
-
-        initHash(v)
-        initContents(v)
-
-        return v
-    }
-
-    private fun initHash(v : View){
-        var adapter = HashAdapter(v.context)
-        v.search_hashtag_rcv.adapter = adapter
-        v.search_hashtag_rcv.apply {
-            layoutManager = LinearLayoutManager(v.context, LinearLayoutManager.HORIZONTAL, false)
-            addItemDecoration(ItemDeco(v.context))
-        }
-        adapter.data = listOf(
-            HashData("# 달고나 커피"),
-            HashData("# 코하코토 만들기"),
-            HashData("# 바나나컵 만들기")
-        )
-
-        adapter.notifyDataSetChanged()
-    }
 ```
